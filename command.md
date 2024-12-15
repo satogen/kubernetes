@@ -53,3 +53,17 @@ yamlファイルでひな形のファイルを作成することが可能
 kubectl create namespace [name] --dry-run=client -o yaml 
 ```
 
+## podのRUN
+ RUNをするためのHelpを確認
+```bash
+kubectl run -h
+```
+--imageに走らせたいImageを指定することでRunできる。
+```bash
+kubectl run [name] --image=nginx
+```
+
+詳細を出力したい場合は
+```bash
+kubectl get pod [name] -o yaml > [output_path]
+```
