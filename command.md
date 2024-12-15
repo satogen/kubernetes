@@ -6,3 +6,10 @@
 ```bash
 kubectl api-resources
 ```
+[ref](https://kubernetes.io/ja/docs/reference/kubectl/)
+## get nodeコマンドのオプション
+optionにはyaml, json, wideなど指定でき、表示形式を変更できる。
+```bash
+kubectl get node -o [option] 
+```
+
