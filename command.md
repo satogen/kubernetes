@@ -39,3 +39,17 @@ kubectl describe ns [prefix]
 ```bash
 kubectl describe pod [pod] -n [name]
 ```
+
+## kubectlリソースの作成
+createでファイルに沿っPODを作成
+```bash
+kubectl create -f [file name]
+```
+deleteで同じように削除できる。
+
+## ひな形の作成
+yamlファイルでひな形のファイルを作成することが可能
+```bash
+kubectl create namespace [name] --dry-run=client -o yaml 
+```
+
