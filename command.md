@@ -22,3 +22,20 @@ kubectl get pod --all-namespaces
 kubectl get pod -n [name]
 ```
 
+## ノードの詳細確認
+IPアドレスやSystemInfoが表示される。
+メモリのリミットやAllocateの情報がある。
+GETよりも詳細の情報がわかる
+```bash
+kubectl describe node docker-desktop
+```
+
+下記のコマンドで特定のPrefixを持っているNamePaceの情報を取得
+```bash
+kubectl describe ns [prefix]
+```
+
+特定のPODが動作していない場合などは下記のコマンド
+```bash
+kubectl describe pod [pod] -n [name]
+```
