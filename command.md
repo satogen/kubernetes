@@ -67,3 +67,17 @@ kubectl run [name] --image=nginx
 ```bash
 kubectl get pod [name] -o yaml > [output_path]
 ```
+
+## namespaceの作成
+作成は二つある。
+一つは下記のようにYamlで作成する
+```bash
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: team-a
+```
+コマンドで作成する方法がある。
+```bash
+kubectl apply -f [name]
+```
