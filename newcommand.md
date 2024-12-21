@@ -53,3 +53,4 @@ yamlファイルでひな形のファイルを作成することが可能
 kubectl create namespace [name] --dry-run=client -o yaml 
 ```
 
+sample sample
